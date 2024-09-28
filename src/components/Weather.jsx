@@ -58,8 +58,8 @@ function Weather({updateInfo}) {
 
     return (
         <div>
-            <form action="" onSubmit={handleSubmit}>
-                <h2 id='Title'>Let's Check weather of you city</h2>
+            <form action="" onSubmit={handleSubmit} id='Title'>
+                <h2>Let's Check weather of you city</h2>
                 <TextField id="City" label="City Name" variant="outlined" required value={city} onChange={handleChange} />
                 <br /><br />
                 <Button variant="contained" type='submit'>Search</Button>

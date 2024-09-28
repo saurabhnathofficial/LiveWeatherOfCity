@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-
+import './Info.css';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
@@ -17,8 +17,8 @@ function Info({info}) {
 
   
   return (
-    <div id='info_wether'>
-      <Card sx={{ maxWidth: 345 }}>
+    <div >
+      <Card id='info_wether' style={{width: '50vh'}} sx={{ maxWidth: 345 }}>
         <CardMedia
           sx={{ height: 140 }}
           image={info.humidity > 80 ? RAIN_URL : info.temp > 25 ? HOT_URL : COLD_URL}

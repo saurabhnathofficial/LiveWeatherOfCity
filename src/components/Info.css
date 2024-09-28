@@ -1,0 +1,10 @@
+#info_wether {
+    background: linear-gradient(to right, #0f172a, #334155);
+}
+
+* {
+    color: white;
+
+}
+
+/* bg-gradient-to-tr from-violet-500 to-orange-300 */
